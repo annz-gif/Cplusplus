@@ -1,0 +1,21 @@
+#include<opencv2/opencv.hpp>
+using namespace cv;
+int main(int argc, char** argv)
+{
+	Mat original, modified;
+	original=imread("lena.jpg", IMREAD_COLOR);
+	modified=imread("lena.jpg", IMREAD_COLOR);
+	for(int rows=0; rows<original.rows; rows++)
+	{
+		for(int cols=0; cols<original.cols; cols++)
+		{
+			modified.at<Vec3b>(rows,cols)[0]=original.at<Vec3b>(rows,cols)[0]*0.5f;
+modified.at<Vec3b>(rows,cols)[1]=original.at<Vec3b>(rows,cols)[1]*0.5f;
+modified.at<Vec3b>(rows,cols)[2]=original.at<Vec3b>(rows,cols)[2]*0.5f;
+		}
+	}
+	imshow("Original",original);
+	imshow("Modified",modified);
+	waitKey(0);
+	return 0;
+}
