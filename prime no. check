@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+  int n;
+  cout<<"enter the number:"<<endl;
+  cin>>n;
+  int i=2;
+  while(i<n){
+       if(n%i==0){
+           cout<<"not a prime no."<<endl;
+           break;
+       }
+       i=i+1;
+  } if(i==n){
+      cout<<"Prime no."<<endl;
+  }
+    return 0;
+}
