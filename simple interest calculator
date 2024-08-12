@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int p,r,t;
+    float si;
+    cout<<"enter principal amount,rate of interest,time"<<endl;
+    cin>>p>>r>>t;
+    si=p*r*t/100;
+    cout<<si;
+    
+
+    return 0;
+}
