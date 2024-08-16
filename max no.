@@ -1,0 +1,21 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+
+
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int max=INT_MIN;
+    int i=1;
+    int no;
+       while(i<=n){
+      cin>>no;
+   if(max<no){
+     max=no; 
+  }
+i++; }
+cout<<"Largest no. is:"<<max<<endl;
+    return 0;
+}
