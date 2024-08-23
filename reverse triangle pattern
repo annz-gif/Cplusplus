@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    int spaces=0;
+    int st=n;
+    for(int i=0;i<n;i++){
+        for(int k=0;k<spaces;k++){
+            cout<<" ";
+        }
+        for(int k=0;k<st;k++){
+            cout<<"*";
+        }
+        spaces++;
+        st--;
+         cout<<endl;
+    }
+   
+
+    return 0;
+}
