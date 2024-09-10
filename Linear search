@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    n=5;
+    int a[5]={3,4,1,8,6};
+    int i, key=6;
+    for( i=0;i<n;i++){
+        if(a[i]==key){
+            cout<<"the element is present at:"<<i;
+            break;
+        }
+    }
+    if(i==n){
+         cout<<"element not present";
+    }
+    cout<<endl;
+     return 0;
+}
