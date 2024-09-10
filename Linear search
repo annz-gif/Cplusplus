@@ -15,7 +15,7 @@ int main()
         }
     }
     if(i==n){
-         cout<<"element not present";
+         cout<<"element is not present";
     }
     cout<<endl;
      return 0;
