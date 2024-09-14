@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int a[]={2,73,55,4,88};
+    int n=sizeof(a)/sizeof(int);
+    int i=0,j=n-1;
+    int sum=75;
+    while( i < j){
+        if(a[i] + a[j] == sum){
+            cout<<a[i]<<" "<<a[j]<<endl;
+            i++;
+            j--;
+        }
+        else if(a[i] + a[j] < sum){
+            i++;
+    } else if(a[i] + a[j] > sum){
+        j--;
+    }
+
+      }
+   return 0;
+}
