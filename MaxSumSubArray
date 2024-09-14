@@ -1,0 +1,38 @@
+
+#include <iostream>
+#include<climits>
+using namespace std;
+
+void GenerateSubArray(int a[],int n){
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            for(int k=i;k<=j;k++){
+                cout<<"  "<<a[k];
+            }
+          cout<<endl;
+        }
+    }
+}
+void MaxSumSubArray(int a[],int n){
+    int sum=0;
+    int max=INT_MIN;
+       for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            for(int k=i;k<=j;k++){
+               sum += a[k];
+            }
+           if(max<sum){
+               max=sum;
+           }
+        }
+    }
+     cout<<"max subarray"<<" "<<max<<endl;
+}
+
+int main() {
+    int a[]={2,1,9,4,8};
+    int n=sizeof(a)/sizeof(int);
+    MaxSumSubArray(a,n);
+      
+   return 0;
+}
