@@ -8,6 +8,7 @@ void GenerateSubArray(int a[],int n){
             for(int k=i;k<=j;k++){
                 cout<<"  "<<a[k];
             }
+          cout<<endl;
         }
     }
 }
