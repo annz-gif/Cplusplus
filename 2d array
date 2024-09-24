@@ -1,0 +1,24 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int a[100][100];
+    int r,c;
+    cout<<"Enter no of rows and columns"<<endl;
+    cin>>r>>c;
+    cout<<"enter the values"<<endl;
+    for(int row=0;row<r;r++){
+        for(int col=0;col<c;col++){
+            cin>>a[row][col];
+        }
+    }
+      for(int row=0;row<r;r++){
+        for(int col=0;col<c;col++){
+            cout<<a[row][col]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
