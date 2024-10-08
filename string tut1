@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main() {
+    string s;
+    s="I am learning strings update";
+    string word="update";
+    cout<<"learning is present at:"<<s.find(word)<<endl;
+
+    return 0;
+}
