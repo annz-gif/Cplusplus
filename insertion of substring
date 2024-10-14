@@ -1,0 +1,17 @@
+// C++ Program to insert the substring
+// at any position
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string str1("Hello World! ");
+    string str2("GeeksforGeeks ");
+
+    // Inserts 6 characters from index number
+    // 8 of str2 at index number 6 of str1
+    str1.insert(6, str2, 8, 6);
+
+    cout << str1;
+
+    return 0;
+}
