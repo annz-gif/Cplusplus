@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Welcome to Aanshi’s world!";
+  return 0;
+}
