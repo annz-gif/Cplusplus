@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    // The current number to be printed
+    int currentNumber = 1;
+
+    // Loop through each row
+    for (int i = 1; i <= N; ++i) {
+        // Loop through each number in the current row
+        for (int j = 1; j <= i; ++j) {
+            // Print the current number followed by a tab if it's not the last number in the row
+            cout << currentNumber;
+            if (j < i) {
+                cout << "\t";  // Add a tab between numbers
+            }
+            currentNumber++;  // Increment the current number
+        }
+        cout << endl;  // Move to the next line after completing the row
+    }
+
+    return 0;
+}
